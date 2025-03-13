@@ -5,7 +5,8 @@ let c1r, c1g, c1b; // rgb für untere Himmelfarbe
 let c2; // obere Himmelfarbe
 let c2r, c2g, c2b; // rgb für obere Himmelfarbe
 let ho, mi, se;
-let now;
+let now; 
+let fullday = 86400
 
 let containerHeight = 900;
 
@@ -34,15 +35,15 @@ function draw() {
   se = second();
   now = se + mi * 60 + ho * 60 * 60; // berechnet die aktuelle Sekunde vom Tag 0–86400
 
-  c1h = colormap(se, 240, 360, 0, 50, 200, 59);
-  c1s = colormap(se, 20, 20, 20, 30, 20, 59);
-  c1b = colormap(se, 60, 100, 100, 100, 100, 59);
+  c1h = colormap(now, 240, 360, 0, 50, 200, fullday);
+  c1s = colormap(now, 20, 20, 20, 30, 20, fullday);
+  c1b = colormap(now, 60, 100, 100, 100, 100, fullday);
 
   c1 = color(c1h, c1s, c1b); // untere Himmelfarbe
 
-  c2h = colormap(se, 240, 220, 220, 220, 230, 59);
-  c2s = colormap(se, 60, 40, 40, 20, 80, 59);
-  c2b = colormap(se, 20, 70, 70, 100, 60, 59);
+  c2h = colormap(now, 240, 220, 220, 220, 230, fullday);
+  c2s = colormap(now, 60, 40, 40, 20, 80, fullday);
+  c2b = colormap(now, 20, 70, 70, 100, 60, fullday);
 
   c2 = color(c2h, c2s, c2b); // obere Himmelfarbe
 
