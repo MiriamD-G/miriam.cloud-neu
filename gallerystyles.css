@@ -1,0 +1,73 @@
+.miriampath {
+    position: fixed;
+    fill: none;
+    height: 40px;
+    stroke: var(--siteColor);
+  
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 10px;
+    stroke-dasharray: none;
+    animation: none;
+  }
+  
+  .bt {
+    position: fixed;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  #x1 {
+    
+    height: 25px;
+    overflow: visible;
+  
+    fill: none;
+    stroke: var(--siteColor);
+    stroke-linecap: round;
+    stroke-width: 10px;
+    stroke-dasharray: 115 198;
+    transition: 0.5s ease-in-out;
+  }
+  .bt:hover #x1 {
+    stroke-dashoffset: -250;
+    stroke-dasharray: 90 330;
+  }
+  
+  #p5-container {
+    display: grid;
+    justify-content: center;
+  }
+  /* p h1 label li{
+    margin-left: 50px;
+    font-size: 0.2rem;
+    color: var(--siteColor);
+  } */
+
+  section  {
+    margin: 0 20px;
+    color: var(--siteColor);
+    /* margin-top: -3rem; */
+  }
+  .bild {
+    display: grid;
+    justify-content: center;
+
+  }
+  .galleryPageText {
+    font-size: 1.2rem;
+    color: var(--siteColor);
+  }
+  .sliderbox {
+    margin-top: -2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media (min-width: 700px) {
+    section  {
+      margin: 0 50px;
+    }
+
+  
+  }

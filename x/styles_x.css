@@ -1,0 +1,57 @@
+.x7box {
+    margin: 200px;
+    height: 90px;
+    overflow: visible;
+    fill: none;
+    stroke: #0a3a4a;
+    stroke-linecap: round;
+    stroke-width: 20px;
+    transition: 1s ease-in-out;
+  }
+  
+  .x7O {
+    stroke-dasharray: 200 700;
+    stroke-dashoffset: 160;
+    transition: 1s ease-in-out;
+    
+  }
+  .x7box:hover .x7O {
+    stroke-dashoffset: -350;
+  
+    animation: sw 1s;
+  
+  }
+  
+  .x7U {
+    stroke-dasharray: 150 225;
+    stroke-dashoffset: 110;
+    transition: 1s ease-in-out;
+  }
+  .x7box:hover .x7U {
+    stroke-dashoffset: -200;
+  
+    animation: sw 1s;
+  
+  }
+  
+  .x7M {
+    stroke-dasharray: 200 320;
+    stroke-dashoffset: 160;
+    transition: 1s ease-in-out;
+  }
+  
+  .x7box:hover .x7M {
+    stroke-dashoffset: -290;
+    
+    animation: sw 1s;
+  
+  }
+  
+  @keyframes sw{
+    0%, 100% {
+      stroke-width: 20px;
+    }
+    50% {
+      stroke-width: 2px;
+    }
+  }

@@ -1,0 +1,34 @@
+body {
+  background-color: #f4f4d9;
+  --siteColor:#04fbc1;;
+}
+
+#picture-box {
+  margin: 0 30px ;
+  display: grid;
+  align-content: center;
+  gap: 30px;
+}
+#picture-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.bild img{
+  height: 60%;
+  transform-origin: center top;
+
+}
+
+
+
+
+@media (min-width: 700px) {
+  #picture-box {
+    margin: 0 50px;
+
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  
+}

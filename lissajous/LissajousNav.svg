@@ -1,0 +1,15 @@
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #990;
+        stroke-width: 2px;
+        scale: 0.8;
+        transform-origin: center 
+    
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M60,10c60,0-40,20-40,50s100,50,40,50,40-20,40-50S0,10,60,10Z"/>
+</svg>

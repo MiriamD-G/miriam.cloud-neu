@@ -1,0 +1,377 @@
+body {
+  /* background-color: rgb(250, 240, 250); */
+  background-color: rgb(239, 229, 251);
+  --siteColor: rgb(50, 230, 125);
+}
+
+/* header {
+  position: fixed;
+  margin-top: 0;
+} */
+
+header nav div {
+  display: flex;
+  align-items: baseline;
+  column-gap: 20px;
+}
+
+.miriampath {
+  fill: none;
+  height: 40px;
+  stroke: var(--siteColor);
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10px;
+  stroke-dasharray: none;
+  animation: none;
+}
+
+/* .arrow {
+  height: 40px;
+  stroke: var(--siteColor);
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 5px;
+  transition: 5s;
+  overflow: visible;
+} */
+
+#x1 {
+  margin-left: 700px;
+  position: absolute;
+  height: 100px;
+  overflow: visible;
+  fill: none;
+  stroke: #0a19f4;
+  stroke-linecap: round;
+  stroke-width: 20px;
+  stroke-dasharray: 115 198;
+  /* stroke-dashoffset: 20; */
+  transition: 0.5s ease-in-out;
+}
+.x2box:hover #x1 {
+  stroke-dashoffset: -250;
+  stroke-dasharray: 90 330;
+  stroke: rgb(248, 175, 209);
+}
+#x2 {
+  position: absolute;
+  margin: 130px;
+  height: 100px;
+  overflow: visible;
+  fill: none;
+  stroke: #196a38;
+  stroke-linecap: round;
+  stroke-width: 10px;
+  transition: 1s ease-in-out;
+}
+
+.x3box:hover #x2oustrich {
+  stroke-dashoffset: -360;
+  /* stroke-dasharray: 50  360; */
+  /* rotate: 30deg; */
+}
+
+.x3box:hover #x2 {
+  rotate: 225deg;
+}
+
+#x2oustrich {
+  stroke-dasharray: 240 400;
+  stroke-dashoffset: 200;
+  transition: 1s ease-in-out;
+}
+
+#x2mstrich {
+  transition: 1s ease-in-out;
+  /* stroke-dasharray: 1; */
+}
+
+.x4box {
+  height: 100px;
+  margin-left: 300px;
+  fill: none;
+  stroke: #ff7bac;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10px;
+  rotate: 0deg;
+  transition: 1s;
+}
+#x4boxOU {
+  stroke-dasharray: 40 56.57;
+  stroke-dashoffset: 40;
+  transition: 0.4s;
+}
+#x4boxM {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 0;
+  transition: 0.4s;
+}
+
+.x4box:hover {
+  rotate: 90deg;
+}
+
+.x4box:hover #x4boxOU {
+  stroke-dashoffset: 96.57;
+  stroke-dasharray: 56.57 40;
+}
+.x4box:hover #x4boxM {
+  stroke-dashoffset: -40;
+}
+
+.bt {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#homeX {
+  height: 30px;
+  stroke: var(--siteColor);
+  overflow: visible;
+  stroke-linecap: round;
+  stroke-width: 10px;
+  transition: 0.5s ease-in-out;
+}
+#homeX4 {
+  height: 20px;
+  stroke: var(--siteColor);
+  stroke-width: 8px;
+}
+
+.bt:hover #homeX {
+  stroke-width: 290px;
+  stroke: rgb(200, 248, 234);
+  transform: scale(40%) rotate(90deg);
+}
+
+.bt:active #homeX {
+  stroke: rgb(253, 114, 114);
+  transition: none;
+}
+
+.testbox {
+  /* background-color: cadetblue; */
+  height: 200px;
+  width: 200px;
+  /* transition: 3s; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#homeX2 {
+  height: 150px;
+  stroke: rgb(134, 216, 178);
+  stroke-width: 10px;
+  stroke-linecap: round;
+  overflow: visible;
+  transition: 3s;
+  position: absolute;
+}
+#homeX3 {
+  height: 130px;
+  stroke: rgb(6, 91, 6);
+  stroke-width: 15px;
+  stroke-linecap: round;
+  position: absolute;
+  transition: 5s;
+}
+.testbox:hover #homeX2 {
+  stroke-width: 80px;
+  transform: scale(80%);
+}
+.testbox:hover #homeX3 {
+  stroke: rgb(227, 240, 183);
+  stroke-width: 10px;
+  transform: scale(80%);
+}
+
+@keyframes growli {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes linie {
+  0% {
+    stroke-width: 2px;
+  }
+  75% {
+    stroke-width: 28px;
+  }
+  100% {
+    stroke-width: 8px;
+  }
+}
+
+/* nav div :hover {
+  transition: 3s;
+    stroke-width: 22px;
+    stroke: blueviolet;
+    animation-duration: 3s;
+    animation-name: growli;
+    stroke-width: 8px;
+    /* stroke-dasharray: 1 16; */
+/* rotate: 360deg;
+
+} */
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+article {
+  padding-top: 120px;
+  padding-left: 50px;
+  height: 1800px;
+  /* background-color: rgb(160, 95, 139); */
+}
+
+.x5box {
+  margin: 300px;
+  height: 40px;
+  overflow: visible;
+  fill: none;
+  stroke: #cebe2b;
+  stroke-linecap: round;
+  stroke-width: 20px;
+  transition: 1s ease-in-out;
+}
+
+.x5OU {
+  stroke-dasharray: 200 700;
+  stroke-dashoffset: 120;
+  transition: 1s ease-in;
+}
+
+.x5M {
+  stroke-dasharray: 200 600;
+  stroke-dashoffset: 120;
+  transition: 1s ease-in;
+}
+
+.x5box:hover .x5M {
+  stroke-dashoffset: -620;
+  stroke: #521833;
+}
+
+.x5box:hover .x5OU {
+  stroke-dashoffset: -330;
+  stroke: #521833;
+}
+
+.x5box:hover {
+  rotate: 135deg;
+}
+
+.x6box {
+  margin-left: 300px;
+  height: 90px;
+  overflow: visible;
+  fill: none;
+  stroke: #b4fa1f;
+  stroke-linecap: round;
+  stroke-width: 20px;
+  transition: 1s ease-in-out;
+}
+
+.x6OU {
+  stroke-dasharray: 200 700;
+  stroke-dashoffset: 120;
+  transition: 1s ease-in-out;
+}
+
+.x6M {
+  stroke-dasharray: 200 450;
+  stroke-dashoffset: 120;
+  transition: 1s ease-in-out;
+}
+
+.x6box:hover .x6M {
+  stroke-dashoffset: -393;
+}
+
+.x6box:hover .x6OU {
+  stroke-dashoffset: -317;
+}
+
+/* .x6box:hover {
+  rotate: 90deg;
+
+} */
+
+.x7box {
+  margin-left: 800px;
+  height: 90px;
+  overflow: visible;
+  fill: none;
+  stroke: #0a3a4a;
+  stroke-linecap: round;
+  stroke-width: 20px;
+  transition: 1s ease-in-out;
+}
+
+.x7O {
+  stroke-dasharray: 200 700;
+  stroke-dashoffset: 160;
+  transition: 1s ease-in-out;
+}
+.x7box:hover .x7O {
+  stroke-dashoffset: -350;
+
+  /* animation: sw 1s; */
+
+}
+
+.x7U {
+  stroke-dasharray: 150 225;
+  stroke-dashoffset: 110;
+  transition: 1s ease-in-out;
+}
+.x7box:hover .x7U {
+  stroke-dashoffset: -200;
+
+  /* animation: sw 1s; */
+
+}
+
+.x7M {
+  stroke-dasharray: 200 320;
+  stroke-dashoffset: 160;
+  transition: 1s ease-in-out;
+}
+
+.x7box:hover .x7M {
+  stroke-dashoffset: -290;
+  /* animation: sw 1s; */
+
+}
+
+@keyframes sw{
+  0%, 100% {
+    stroke-width: 20px;
+  }
+  50% {
+    stroke-width: 2px;
+  }
+}

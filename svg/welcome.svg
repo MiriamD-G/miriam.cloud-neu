@@ -1,0 +1,14 @@
+<svg viewBox="0 0 1920 1080">
+    <path id="welcomePath"
+        d="M0,548.97c1292.03,531.03,1693.09-65.73,1508.28-250.54C1204.21-5.64,276.52,1080,1920,945.27"
+        fill="#fff" />
+
+          <text y="40" font-size="60" font-family="menco, sans-serif">
+    <textPath id="text-path" class="text" href="#welcomePath">
+      Welcome to my univers.
+    </textPath>
+  </text>
+
+
+
+</svg>
