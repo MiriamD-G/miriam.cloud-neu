@@ -6,7 +6,7 @@ let c2; // obere Himmelfarbe
 let c2r, c2g, c2b; // rgb für obere Himmelfarbe
 let ho, mi, se;
 let now; 
-let fullday = 86400
+let fullday = 86400-1 
 
 let containerHeight = 900;
 
