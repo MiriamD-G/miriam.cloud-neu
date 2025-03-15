@@ -30,7 +30,8 @@ createCanvas (windowWidth, windowHeight)
 }
 
 function draw(){
-    background(blue%360, 20, 50)
+    // background(blue%360, 20, 50)
+    background(143, 12.4, 80)
     blue += bluechange
 
     for (let d of dro){
@@ -49,14 +50,18 @@ class Drops {
         this.x = random(width)
         this.y = random(height)
         this.r = r
+        this.c = 80
+        this.cchange = 2
         this.speed = random()
         this.s = random(30, 100)
+        
         this.alpha = random(10, 200)
     }
     show(){
         noStroke()
         // noFill()
-        fill(328, this.s, 100, 100)
+        fill(this.c, this.s, 100, 100)
+        // this.c += this.cchange
         strokeWeight(3)
         // stroke(155, this.blue, 100)
         circle(this.x, this.y, this.r)
