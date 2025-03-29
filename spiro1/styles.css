@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(20, 120, 230);
+  --siteColor: white;
+}
+
+/* Das label-Element */
+.switch {
+  /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+  position: relative;
+  width: 64px;
+  height: 28px;
+  display: inline-block;
+}
+
+/* Der graue Untergrund des Schalters */
+.switch span {
+  position: absolute;
+  background-color: rgb(20, 120, 230);
+  border: 2px solid white;
+  border-radius: 14px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition:  0.5s;
+}
+/* Der kreisrunde Button im Switch */
+.switch span::before {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 3px;
+  height: 14px;
+  width: 14px;
+  transition: 0.5s;
+}
+input:checked + span {
+  background-color: var(--siteColor);
+}
+
+input:checked + span::before {
+  transform: translateX(34px);
+  background-color: white;
+  bottom: 2px;
+  height: 16px;
+  width: 16px;
+
+  border: 2px solid rgb(20, 120, 230);
+
+}
+
+.switch input {
+  display: none;
+}

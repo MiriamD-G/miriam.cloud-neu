@@ -70,6 +70,7 @@ a {
   flex-direction: column;
   text-align: end;
   transition: 0.4s ease-in-out;
+  
 }
 
 .nav-menu.active {
@@ -79,6 +80,8 @@ a {
 .hamburgerSVG {
   display: flex;
   align-items: center;
+  cursor: pointer;
+
 }
 
 .x6box {
