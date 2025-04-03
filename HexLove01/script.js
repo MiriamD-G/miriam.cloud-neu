@@ -59,7 +59,7 @@ class Hexa {
     this.rC = 200; // Farbe rot
     this.gC = 170; // Farbe grün
     this.bC = 55; // Farbe blau
-    this.cC = 10; // Farb-Veränderungsfaktor beim Sensor
+    this.cC = 1; // Farb-Veränderungsfaktor beim Sensor
     this.rCc = this.cC // Farb-Veränderungsfaktor für rot
     this.gCc = this.cC // Farb-Veränderungsfaktor für grün
     this.bCc = this.cC // Farb-Veränderungsfaktor für blau
